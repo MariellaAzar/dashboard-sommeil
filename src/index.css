@@ -1,13 +1,69 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #536bf8;
+  color: white;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a2647;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.header nav button {
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  color: #a0cfff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.header nav button:hover:not(:disabled) {
+  color: white;
+}
+
+.lang-buttons {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.lang-buttons button {
+  margin: 0 5px;
+  padding: 5px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #536bf8;
+  background: white;
+  transition: background-color 0.3s ease;
+}
+
+.lang-buttons button:disabled {
+  background: #3846b5;
+  color: white;
+  cursor: default;
+}
+
+.graph-section {
+  margin-bottom: 40px;
 }

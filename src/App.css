@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #CBE7FF;
+  color: #222;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: #0a2647;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.header h1 {
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.header nav a {
+  margin: 0 10px;
+  color: #E0F7FF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lang-buttons button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lang-buttons .active {
+  background: #4D96FF;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  margin: 40px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  margin-bottom: 20px;
+}
+
+.custom-tooltip {
+  font-size: 0.9rem;
 }
